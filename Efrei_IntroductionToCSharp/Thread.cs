@@ -50,8 +50,6 @@ namespace Efrei_IntroductionToCSharp
             Console.WriteLine("Main thread: Call Join(), to wait until ThreadProc ends.");
             t.Join();
             t2.Join();
-            Console.WriteLine("Main thread: ThreadProc.Join has returned. Press Enter to end program.");
-            Console.ReadLine();
         }
     }
 }

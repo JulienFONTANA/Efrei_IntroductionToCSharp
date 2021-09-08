@@ -7,10 +7,10 @@ namespace Efrei_IntroductionToCSharp
 {
     public class Collection
     {
-        /* To work on the differents parts of this code, I separated the collections
+        /* To work on the different parts of this code, I separated the collections
          * under "regions" that can easily be squeezed by clicking on the minus
          * symbol nest to it. So you can comment what's inside a region to only work with
-         * Dictionnaries, for instance.
+         * Dictionaries, for instance.
          */
         public void Exemple()
         {

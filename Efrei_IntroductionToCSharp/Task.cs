@@ -26,7 +26,7 @@ namespace Efrei_IntroductionToCSharp
                     {
                         dirPath.Add(path); 
                     }
-                } );
+                });
                 tasks.Add(t); // Each task t is added to the collection
             }
             // Waiting for all task to finnish

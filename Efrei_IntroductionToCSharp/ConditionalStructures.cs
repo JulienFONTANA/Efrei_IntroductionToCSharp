@@ -11,7 +11,7 @@ namespace Efrei_IntroductionToCSharp
              * condition be true on multiple lines.
              *
              * Order given to statement is crucial. The line "I'm an adult now"
-             * is not displayed for exemple.
+             * is not displayed for example.
              */ 
             
             var myAge = 27;
@@ -54,7 +54,7 @@ namespace Efrei_IntroductionToCSharp
 
             /* Foreach loops are a very common and powerful tool
              * to iterate on collections, such as array, list,
-             * or dictionnaries 
+             * or dictionaries 
              */
             int[] myIntArray= {1, 2, 3, 4, 5, 6, 7, 8, 9};
             foreach (var myInt in myIntArray)
@@ -63,7 +63,7 @@ namespace Efrei_IntroductionToCSharp
             }
             Console.WriteLine();
 
-            /* Switch statement can be used to iterate on a define serie of elements.
+            /* Switch statement can be used to iterate on a define series of elements.
              * Each case can lead to a different output. Please note the "break" keyword
              * at the end of cases and a default case (which could be reach is some instances
              * but not here, as all days of the week are switch cases)

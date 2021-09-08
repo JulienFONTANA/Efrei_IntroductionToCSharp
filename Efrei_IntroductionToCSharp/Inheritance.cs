@@ -6,8 +6,8 @@ namespace Efrei_IntroductionToCSharp
     /// <Important>
     ///
     /// Please note that for this specific inheritance file, I have
-    /// put interfaces, abscract classes and classes side by side
-    /// in the same file. Each of thoses should be in their own,
+    /// put interfaces, abstract classes and classes side by side
+    /// in the same file. Each of those should be in their own,
     /// separate file, as having many classes in the same file
     /// in considered a bad practice.
     /// 
@@ -18,6 +18,7 @@ namespace Efrei_IntroductionToCSharp
         public void Exemple()
         {
             // These won't work : interfaces and abstract classes cannot be called with new
+            // and as whole cannot be directly instantiated
             //var heroOfLegend = new IHeroOfLegend();
             //var chosenOne = new AChosenOne(); 
 

@@ -5,14 +5,14 @@ using Efrei_IntroductionToCSharp.Ressources;
 
 namespace Efrei_IntroductionToCSharp
 {
-    public class Collection
+    public class Collection : IExemple
     {
         /* To work on the different parts of this code, I separated the collections
          * under "regions" that can easily be squeezed by clicking on the minus
          * symbol nest to it. So you can comment what's inside a region to only work with
          * Dictionaries, for instance.
          */
-        public void Exemple()
+        public void Run()
         {
             var student1 = new Student("John", 23);
             var student2 = new Student("Emily", 22);
@@ -77,6 +77,11 @@ namespace Efrei_IntroductionToCSharp
             
             // It is of course possible to create complex objects, although this isn't recommended
             var pleaseDontDoThis = new Dictionary<Tuple<int, ConcurrentBag<char>>, List<Stack<Student>>>();
+        }
+
+        public string DisplayExempleName()
+        {
+            return "Collections";
         }
     }
 }

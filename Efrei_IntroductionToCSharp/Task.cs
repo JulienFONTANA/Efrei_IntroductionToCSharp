@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Efrei_IntroductionToCSharp
 {
-    public class TaskEx
+    public class TaskEx : IExemple
     {
-        public void Exemple()
+        public void Run()
         {
             var dirPath = new ConcurrentBag<string>();  // Concurrent collection 
             string[] dirNames = { ".", "..", "C:\\" };  // array of hard coded directory path
@@ -39,6 +39,11 @@ namespace Efrei_IntroductionToCSharp
             }
          
             Console.WriteLine("Number of files read: {0}", dirPath.Count);
+        }
+
+        public string DisplayExempleName()
+        {
+            return "Task";
         }
     }
 }

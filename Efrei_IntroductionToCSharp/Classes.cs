@@ -4,9 +4,9 @@ using Efrei_IntroductionToCSharp.Ressources;
 
 namespace Efrei_IntroductionToCSharp
 {
-    public class Classes
+    public class Classes : IExemple
     {
-        public void Exemple()
+        public void Run()
         {
             var grade = new Grade(19);
             
@@ -31,9 +31,14 @@ namespace Efrei_IntroductionToCSharp
                 }
             };
             student2.IntroduceYourself();
-
+            
             DoesStudentPass(student1);
             DoesStudentPass(student2);
+        }
+
+        public string DisplayExempleName()
+        {
+            return "Classes";
         }
 
         private static void DoesStudentPass(Student student)

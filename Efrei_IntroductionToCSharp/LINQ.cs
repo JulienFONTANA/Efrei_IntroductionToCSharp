@@ -5,9 +5,9 @@ using Efrei_IntroductionToCSharp.Ressources;
 
 namespace Efrei_IntroductionToCSharp
 {
-    public class Linq
+    public class Linq : IExemple
     {
-        public void Exemple()
+        public void Run()
         {
             var studentList = new List<Student>
             {
@@ -38,6 +38,11 @@ namespace Efrei_IntroductionToCSharp
             
             Console.WriteLine("Ordered name of male student : {0}", 
                 string.Join(", ", studentList.Where(x => x.Gender == GenderEnum.Male).Select(x => x.Name).OrderBy(x => x)));
+        }
+
+        public string DisplayExempleName()
+        {
+            return "Language integrated query aka LINQ";
         }
     }
 }

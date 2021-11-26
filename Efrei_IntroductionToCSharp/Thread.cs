@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace Efrei_IntroductionToCSharp
 {
-    public class ThreadEx
+    public class ThreadEx : IExemple
     {
         private const int MillisecondsTimer = 500;
         
@@ -32,7 +32,7 @@ namespace Efrei_IntroductionToCSharp
 
         // Try this program many times, the output will differ
         // because the threads order is not define
-        public void Exemple() 
+        public void Run() 
         {
             Console.WriteLine("Main thread: Start the main thread.");
             var t = new Thread(ThreadProc);     // Second thread
@@ -50,6 +50,11 @@ namespace Efrei_IntroductionToCSharp
             Console.WriteLine("Main thread: Call Join(), to wait until ThreadProc ends.");
             t.Join();
             t2.Join();
+        }
+
+        public string DisplayExempleName()
+        {
+            return "Thread";
         }
     }
 }

@@ -2,9 +2,9 @@
 
 namespace Efrei_IntroductionToCSharp
 {
-    public class ConditionalStructures
+    public class ConditionalStructures : IExemple
     {
-        public void Exemple()
+        public void Run()
         {
             /* If / If else / else can be chained as many time as you want,
              * but 3 is the norm. Having only "if" statement can make your
@@ -15,12 +15,11 @@ namespace Efrei_IntroductionToCSharp
              */ 
             
             var myAge = 27;
-            //if (myAge is >= 1 and < 18) works in C# 5.0
             if (myAge >= 1 && myAge < 18)
             {
                 Console.WriteLine("I'm a minor");
             }
-            if (myAge >= 18 && myAge < 30)
+            else if (myAge >= 18 && myAge < 30)
             {
                 Console.WriteLine("Living my best life ;)");
             }
@@ -37,7 +36,6 @@ namespace Efrei_IntroductionToCSharp
                 }
             }
 
-            
             /* For is the classic "C-style" loop.
              * Like any conditional structures, it can be nested
              */
@@ -87,6 +85,35 @@ namespace Efrei_IntroductionToCSharp
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+
+            // This switch is similar to the first example
+            switch (myAge)
+            {
+                case >= 1 and < 18:
+                    Console.WriteLine("I'm a minor");
+                    break;
+                case >= 18 and < 30:
+                    Console.WriteLine("Living my best life ;)");
+                    break;
+                case >= 18 and < 100:
+                    Console.WriteLine("I'm an adult now");
+                    break;
+                default:
+                {
+                    Console.WriteLine("I'm a liar");
+                    if (myAge > 150)
+                    {
+                        Console.WriteLine("Maybe I should not lie about my age...");
+                    }
+
+                    break;
+                }
+            }
+        }
+
+        public string DisplayExempleName()
+        {
+            return "Conditional Structures and Loops";
         }
     }
 }

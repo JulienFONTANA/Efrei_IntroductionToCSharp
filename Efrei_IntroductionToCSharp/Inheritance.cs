@@ -12,10 +12,9 @@ namespace Efrei_IntroductionToCSharp
     /// in considered a bad practice.
     /// 
     /// </Important>
-    
-    public class Inheritance
+    public class Inheritance : IExemple
     {
-        public void Exemple()
+        public void Run()
         {
             // These won't work : interfaces and abstract classes cannot be called with new
             // and as whole cannot be directly instantiated
@@ -61,6 +60,11 @@ namespace Efrei_IntroductionToCSharp
                 Console.Write($"[{chosenOne.GetType().Name}] ");
                 chosenOne.Attack();
             }
+        }
+
+        public string DisplayExempleName()
+        {
+            return "Inheritance";
         }
 
         /// <summary>

@@ -2,9 +2,9 @@
 
 namespace Efrei_IntroductionToCSharp
 {
-    public class Function
+    public class Function : IExemple
     {
-        public void Exemple()
+        public void Run()
         {
             // Functions can be linked
             Print(AddNumbers(1, 2));
@@ -15,6 +15,11 @@ namespace Efrei_IntroductionToCSharp
             // Functions Overloading
             Print(AddNumbers(1, 2, 3));
             Print(AddNumbers(1, 2, 5, 5, 6, 7));
+        }
+
+        public string DisplayExempleName()
+        {
+            return "Functions";
         }
 
         // Fct 1
